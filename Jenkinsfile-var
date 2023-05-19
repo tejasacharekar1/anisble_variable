@@ -67,7 +67,7 @@ pipeline
 		    }
 			steps
 			{
-			ansiblePlaybook become: true, becomeUser: 'root', credentialsId: 'sayalim', disableHostKeyChecking: true, installation: 'Ansible', inventory: 'host.inv', playbook: 'Task.yaml'
+			ansiblePlaybook become: true, becomeUser: 'root', credentialsId: 'sayalim', disableHostKeyChecking: true, installation: 'Ansible', inventory: 'host.inv', playbook: 'main_playbook.yaml'
 			}
 		}
         stage('Destroy ec2') {
