@@ -16,14 +16,7 @@ pipeline
     }
     stages
     {	
-        stage ('git pull')
-        {
-            steps
-            {
-                git 'https://github.com/tejasacharekar1/terraform_ansible.git'
-            }
-        }
-         stage('Initiating Terraform configuration')
+        stage('Initiating Terraform configuration')
         {
             steps {
                 sh ('terraform init -no-color')
